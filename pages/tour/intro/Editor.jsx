@@ -23,11 +23,15 @@ function AceEditorForm() {
         isValid ? (
           <span style={{ color: '#16a34a' }}>JSON schema is Valid</span>
         ) : (
-          <span style={{ color: '#dc2626' }}>JSON schema validation failed</span>
-        )
+          <span style={{ color: '#dc2626' }}>
+            JSON schema validation failed
+          </span>
+        ),
       );
     } catch (error) {
-      setValidationResult( <span style={{ color: '#dc2626' }}>Invalid JSON schema format</span>);
+      setValidationResult(
+        <span style={{ color: '#dc2626' }}>Invalid JSON schema format</span>,
+      );
     }
     setTextareaValue('');
   };
@@ -48,8 +52,8 @@ function AceEditorForm() {
   return (
     <div>
       <AceEditor
-        mode="json"
-        theme="cobalt"
+        mode='json'
+        theme='cobalt'
         onChange={handleChange}
         placeholder={`{
           "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -61,14 +65,13 @@ function AceEditorForm() {
           },
           "required": ["name", "age"]
         }`}
-      
         width='100%'
         height='60vh'
         fontSize={16}
         value={textareaValue}
       />
       <button
-        className="w-[100px] h-[40px] mx-auto mt-[15px] rounded-lg border-2 bg-primary text-white font-semibold"
+        className='w-[100px] h-[40px] mx-auto mt-[15px] rounded-lg border-2 bg-primary text-white font-semibold'
         type='submit'
         onClick={handleSubmit}
       >
