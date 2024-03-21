@@ -267,6 +267,11 @@ const Footer = () => (
             Code of Conduct
           </a>
         </div>
+        <div className='flex flex-col text-center sm:text-left'>
+          <a href='/tour' className='text-white mb-2'>
+            Tour
+          </a>
+        </div>
       </div>
       <div className='grid grid-cols-3 md:grid-cols-1 mx-auto md:mt-8 mb-4 md:mb-0 lg:ml-12'>
         <div className='mr-4 mb-4'>

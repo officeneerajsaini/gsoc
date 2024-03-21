@@ -187,3 +187,12 @@ border-radius: 4px; */
   top: 35px;
   /* change this value to match the height of the header */
 }
+
+.ace_placeholder {
+  opacity: 0.7;
+  color: white;
+}
+
+.ace_scrollbar {
+  scroll-behavior: smooth;
+}
