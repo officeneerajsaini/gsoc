@@ -9,7 +9,7 @@ export default function Content() {
     <div className='mt-[70px]'>
       <SectionContext.Provider value='docs'>
         <Head>
-          <title>Tour</title>
+          <title>Tour Update</title>
         </Head>
         <div className='h-[90vh] bg-[#202224]'>
           <div className='grid grid-cols-2 gap-2'>
